@@ -1,13 +1,7 @@
 <template>
     <div>
-      <!-- Error Message -->
-      <AlertMessage v-if="error" :message="error" type="error" />
-  
-      <!-- Payroll Information -->
-      <PayrollInfo v-if="result" :result="result" />
-  
       <!-- Instructions -->
-      <div v-else class="mb-4">
+      <div class="mb-4">
         <p>
           Select the year and month to get payroll dates for employees. The payday is the date when employees are paid,
           and the payment date is the date when the payment is required to be made.
@@ -16,7 +10,13 @@
           Payday is the second to last working day of the month, and payments take four business days to process.
         </p>
       </div>
-  
+
+      <!-- Error Message -->
+      <AlertMessage v-if="error" :message="error" type="error" />
+
+      <!-- Payroll Information -->
+      <PayrollInfo v-if="result" :result="result" />
+
       <!-- Form -->
       <PayrollForm 
         :year="year" 
