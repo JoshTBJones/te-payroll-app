@@ -19,7 +19,7 @@ class PayrollService
 
     /**
      * Generate a payroll object for a given year and month.
-     * 
+     *
      * This method calculates both the payday (last business day of the month)
      * and the actual payment date (accounting for bank processing days).
      *

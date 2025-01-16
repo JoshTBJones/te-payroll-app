@@ -9,8 +9,6 @@ class Payroll
     protected $payday;
     protected $paymentDate;
 
- 
-
     /**
      * Constructor for the Payroll class.
      *

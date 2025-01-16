@@ -9,7 +9,7 @@ class PayrollRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
-     * 
+     *
      * Validates year and month inputs for payroll calculations:
      * - year: Must be a valid year between 2000-2100 in YYYY format
      * - month: Must be a valid month number (1-12) in MM format
